@@ -1,0 +1,19 @@
+{
+  "name": "wehreabouts_listener",
+  "version": "0.0.1",
+  "description": "Accepts socket.io data for where abouts beacon.",
+  "main": "listener.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "beaconlistener"
+  },
+  "author": "dobbersp",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {}
+}
