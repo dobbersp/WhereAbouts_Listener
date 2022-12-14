@@ -1,6 +1,6 @@
 {
-  "certDir": "./certs",
-  "dataDir": "./data",
+  "certDir": "./certs/",
+  "dataDir": "./data/",
   "serverPort": "1111",
   "token": ""
 }
