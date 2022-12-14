@@ -17,6 +17,8 @@ var https_server = https.createServer(options);
 socket_listener = io.listen(https_server);
 https_server.listen(serverPort);
 
+console.log("Starting listener server on port " + serverPort);
+
 socket_listener.sockets.on("connection", function(client) {
   console.log("user connected: " + client.request.connection.remoteAddress);
   client.on("beacon_speaker", (data) =>handleBeaconData(data))
