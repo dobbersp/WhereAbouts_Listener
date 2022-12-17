@@ -32,7 +32,8 @@ function handleBeaconData(data)
       var dataFileName = data.file;
       var fileData = data.data;
 	  console.log("Updating " + data.file + " : " + data.data);
-      fs.writeFileSync(dataDir+"/"+dataFileName,JSON.stringify(fileData));
+      fs.writeFileSync(dataDir+"/"+dataFileName+".temp",JSON.stringify(fileData));
+      fs.rename(dataDir+"/"+dataFileName+".temp",dataDir+"/"+dataFileName);
   }
   catch(e)
   {
